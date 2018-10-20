@@ -88,7 +88,7 @@ go run Hello.go
 ./Hello.go:5:2: imported and not used: "github.com/labstack/echo"
 
 ```
-另外\n在末尾要有，不然会出现%
+\n代表换行，不然会出现%
 ```
 Hello Go !% 
 ```
