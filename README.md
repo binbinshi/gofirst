@@ -4,7 +4,7 @@ go 也需要自己的运行环境类似于java的JRE， go的运行环境是goro
 1.下载go 的开发包
 本文是mac下面使用的homebrew 做的安装，安装最新版本的go版本命令如下：
 ```
-homebrew install go  
+brew install go  
 ```
 2.安装完成后可以通过命令查看go的版本信息：
 ```
