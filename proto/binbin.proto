@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+message BinBinRequest{
+    string name=1;
+}
+
+message BinBinReply{
+    string message=1;
+}
+
+service BinBin{
+    rpc SayHi(BinBinRequest)returns (BinBinReply){}
+}
