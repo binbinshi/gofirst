@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 type statusFlag uint16
@@ -47,6 +48,23 @@ func main() {
 	fmt.Println(k|l|j)
 	fmt.Println(k+l+j)
 	fmt.Println(a,b,c,d,e,f,h,g,j,k,l,n,m)
+
+	//向一个slice里赋值的时候可以使用
+	s := make([]string, 1)
+	fmt.Println( "len" + strconv.Itoa(len(s)) +"cap"+ strconv.Itoa(cap(s)))
+	s[0] = "2"
+	fmt.Println(s)
+	for v := range s  {
+		fmt.Println(v)
+		fmt.Println(s[v])
+	}
+
+	s1 := make([]string, 1)
+	fmt.Println( "len" + strconv.Itoa(len(s1)) +"cap"+ strconv.Itoa(cap(s1)))
+	s1[0]="err"
+	s1 = append(s1,"ok")
+
+	fmt.Println( "len" + strconv.Itoa(len(s1)) +"cap"+ strconv.Itoa(cap(s1)))
 }
 
 func countStr(s string) map[string]int {
